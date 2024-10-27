@@ -39,6 +39,7 @@
 
 5. **Write Test Cases**
    - Implement test methods to automate interactions with the web application:
+   - you can use this website to try https://practicetestautomation.com/practice-test-login/
      ```python
      def test_login(self):
          self.driver.get("https://practicetestautomation.com/practice-test-login/")
