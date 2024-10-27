@@ -65,3 +65,33 @@
          unittest.main()
      ```
    - Run your script to execute the tests.
+  
+
+## Common Selenium Commands
+- **Find Element**: `self.driver.find_element(By.XPATH, "xpath")`
+- **Send Keys**: `element.send_keys("text")`
+- **Click**: `element.click()`
+- **Wait for Element**: Use `implicitly_wait(seconds)` to set a default wait time
+
+## Importing Modules and Their Roles
+1. **Importing the unittest Module**
+   This imports the unittest framework, which is used to create and run test cases in Python.
+
+2. **Importing the WebDriver**
+   The webdriver from the selenium package is imported to control web browsers programmatically.
+
+3. **Importing By for Element Locating**
+   The By class is imported from selenium.webdriver.common to define different strategies for locating web elements (like using XPath or ID).
+
+4. **Importing the Service Class**
+   The Service class from selenium.webdriver.chrome.service is imported to manage the ChromeDriver process that communicates with the Chrome browser.
+
+5. **Importing Options for Browser Configuration**
+   The Options class from selenium.webdriver.chrome.options is imported to set various configuration options for the ChromeDriver, such as running in headless mode or specifying window size.
+
+6. **Creating a Test Class**
+   A test class is defined by subclassing unittest.TestCase, which allows you to group related test cases together.
+
+7. **Setting Up and Tearing Down Tests**
+   You define setup and teardown methods (like setUpClass and tearDownClass) to initialize the WebDriver before tests run and to quit the browser after all tests are complete.
+
